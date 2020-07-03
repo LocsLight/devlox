@@ -1,0 +1,41 @@
+.header {
+    background: #3CA55C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    max-height: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-template-columns: 1fr 3fr 1fr;
+    color: white;
+    text-decoration: none;
+    font-family:'Montserrat', sans-serif;
+}
+
+.header-menu-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-logo-container{
+    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.logo-link{
+    width: 100px;
+}
+
+.header-link{
+    color: white;
+    align-self: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.bold{
+    font-weight: bold;
+}
