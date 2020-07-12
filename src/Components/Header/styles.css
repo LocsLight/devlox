@@ -1,28 +1,73 @@
-.header {
-    background: #3CA55C;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.header{
+
+    height: 100vh;
+    overflow: hidden;
+    grid-column: 1 / 9;
+    perspective: 100px;
+    position: relative;
+    transform-style: preserve-3d;
     
-    max-height: 10vh;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-template-columns: 1fr 3fr 1fr;
     color: white;
     text-decoration: none;
     font-family:'Montserrat', sans-serif;
+    display: flex, grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(16, 100px);
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.header:before {
+    animation: fondu-glisse-down 1s cubic-bezier(.25,.78,.51,.77) forwards;
+    content: '';
+    /*background: #3CA55C;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffea0593, #55e0d598), url('../../img/bg.jpg') no-repeat bottom ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+}
+.header:after {
+    /*background: #3CA55C;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: white; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    content: '';
+    animation: little-rotate 1s cubic-bezier(.25,.78,.51,.77) forwards;
+
+    height: 40em;
+    width: 200%;
+    left: -5%;
+    position: absolute;
+    right: 0;
+    top: 90%;
+    transform-origin: 0 0;
+    z-index: -0;
 }
 
 .header-menu-container{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(10,10%);
+    width: 100%;
+    justify-items: center;
+    position: relative;
+    animation-delay: 1.2s;
 }
 
 .header-logo-container{
-    justify-content: flex-start;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    top:0px;
     font-weight: 300;
+    margin-bottom: 20px;
+    animation-delay: 1s;
 }
+
+
 
 .logo-link{
     width: 100px;
@@ -35,7 +80,27 @@
     text-decoration: none;
     font-size: 1.2rem;
 }
+.aboutme{
+    grid-column: 1/2;
+}
+.curriculum{
+    grid-column: 2/3;
+    
+}
+.projets{
+    grid-column: 3/4; 
+    
+}
+.cursus{
+    grid-column: 4/5; 
+    
+}
+.contact{
+    grid-column: 5/6; 
+
+}
 
 .bold{
     font-weight: bold;
 }
+

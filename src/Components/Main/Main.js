@@ -6,11 +6,12 @@ import Curriculum from '../Curriculum/Curriculum';
 import Projets from '../Projets/Projets';
 import Cursus from '../Cursus/Cursus';
 import Contact from '../Contact/Contact';
+import './styles.css'
 
 
 const Main = () => {
     return (
-        <nav className='main-landing'>
+        <div className='main-landing'>
                 <Switch>
                     <Route exact path='/' component = {Landing}></Route>
                     <Route path='/aboutme' component = {AboutMe}></Route>
@@ -19,7 +20,10 @@ const Main = () => {
                     <Route path='/cursus' component = {Cursus}></Route>
                     <Route path='/contact' component = {Contact}></Route>
                 </Switch>
-        </nav>
+                <div className='arrow-container'>
+                <i class="arrow down"></i>
+                </div>
+        </div>
     );
 }
 

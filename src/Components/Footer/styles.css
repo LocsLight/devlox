@@ -1,5 +1,8 @@
-.footer-container {
-    padding: 20px 0;
-    padding: 20px 0;
-    flex: 0 1 80%;
-  }
+.footer{
+    grid-column: 1/9;
+    grid-row: 10/ 12;
+    
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    justify-items: center;
+}

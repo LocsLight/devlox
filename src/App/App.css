@@ -6,25 +6,24 @@
 }
 
 .App {
-  background: #3CA55C;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 90vh;    
+ height: 90vh;    
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 75px);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(16, 100px);
+  grid-gap: 12px 24px;
+}
+.animate-pop-in{
+  animation: pop-in 0.5s ease-out both;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .logo-link {
+    animation: App-logo-spin  2s ease-in-out;
   }
 }
 
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -32,5 +31,45 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes fondu-glisse-down{
+  from{
+      opacity: 0.25;
+      transform: translateY(-25px);
+  }
+  to{
+      opacity: 1;
+      transform: none;
+  }
+}
+@keyframes pop-in{
+  from{
+      opacity: 0;
+      transform: scale(.8);
+  }
+  70%{
+      opacity: 1;
+      transform: scale(1.25);
+  }
+  to{
+      opacity: 1;
+      transform: none;
+  }
+}
+
+@keyframes little-rotate{
+  100%{
+    transform: rotateZ(-5deg)
+  }
+}
+@keyframes fade-up {
+  from{
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+  to{
+    opacity: 1;
+    transform: none;
   }
 }

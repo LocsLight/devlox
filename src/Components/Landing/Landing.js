@@ -4,12 +4,9 @@ import './styles.css';
 const Landing = () => {
     return (
         <div className='landingpage'>
-            <div className='presentation'>
-                <h2 className='title'>Bonjour</h2>
-                <h4 className='subtitle'>Développeur front-end. Pour vous servir.</h4>
-                <p className='paragraph'>Ullamco anim proident tempor ad nostrud occaecat proident qui eiusmod do veniam aliqua.</p>
-            </div>
-            <div></div>
+           <h1 className='landing-title animate-pop-in'>Développeur front-end</h1>
+           <h3 className='landing-title2 animate-pop-in'>Prêt à rejoindre votre équipe sur place ou en remote</h3>
+           <button className='header-button animate-pop-in'>Get started</button>
         </div>
     );
 }
