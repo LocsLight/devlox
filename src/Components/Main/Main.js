@@ -10,6 +10,12 @@ import './styles.css'
 
 
 const Main = () => {
+    document.body.className += 'js-loading';
+    const montrerPage = () => {
+        document.body.className = document.body.className.replace('js-loading',''); 
+    }
+    window.addEventListener('load', montrerPage, false);
+
     return (
         <div className='main-landing'>
                 <Switch>
@@ -21,7 +27,9 @@ const Main = () => {
                     <Route path='/contact' component = {Contact}></Route>
                 </Switch>
                 <div className='arrow-container'>
-                <i class="arrow down"></i>
+                <div className='bounce'>
+                <i class="arrow down "></i>
+                </div>
                 </div>
         </div>
     );

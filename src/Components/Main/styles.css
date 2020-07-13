@@ -5,21 +5,11 @@
 .arrow {
     z-index: 10;
     position: absolute;
-    opacity: 1;
-    animation: fade-up 2s ease-in-out forwards;
-    border: solid black;
+    animation: no-transform 2s ease-in-out forwards;
+    border: solid white;
     border-width: 0 3px 3px 0;
-    display: inline-block;
     padding: 3px;
-}
-
-.down{
-    transform: rotateY(45deg);
-    -webkit-transform: rotateY(45deg);
-}
-.arrow-container{
-    bottom: 5vh;
-    display: flex;
-    justify-content: center; 
-    position: relative;
+    display: block;
+    opacity: 0;
+    transform: translate(-1rem, -1rem);
 }
