@@ -1,0 +1,17 @@
+.facture-list-container{
+    margin: auto;
+    box-sizing: border-box;
+    width: 300px;
+}
+.facture-list-content{
+    display: flex;
+    margin-left: 50px;
+    padding-bottom: 5px;
+}
+.facture-list-row{
+    display: block;
+}
+.edit-factures-btn:hover{
+    color: blue;
+    cursor: pointer;
+}
