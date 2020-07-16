@@ -1,7 +1,6 @@
 .footer{
-    grid-column: 1/9;
-    grid-row: 10/ 12;
-    
+    bottom: 0;
+    z-index: 12;
     display: grid;
     grid-template-rows: 150px 1fr;
     justify-items: center;

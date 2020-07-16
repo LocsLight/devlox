@@ -1,20 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import './styles.css';
-import logo from '../../img/logo-white.png';
+import logo from '../../img/logo-shadow.png';
 
 const Header = () => {
+
     return (
         <div className="header">
-            <div className='header-logo-container animate-pop-in'>
+        <div data-aos="fade-down"
+        data-aos-duration="1000" className='header-logo-container'>
                 <Link className='logo-link' to ='/'><img src={logo} alt='Logo'/></Link>
-            </div>
+                </div>
             <div className='header-menu-container '>
-                <Link className='header-link aboutme animate-pop-in' to ='/aboutme'>À propos de moi</Link>
-                <Link className='header-link curriculum animate-pop-in' to ='/curriculum'>Curriculum</Link>
-                <Link className='header-link projets animate-pop-in' to ='/projets'>Projets</Link>
-                <Link className='header-link cursus animate-pop-in' to ='/cursus'>Cursus</Link>
-                <Link className='header-link contact animate-pop-in' to ='/contact'>Me contacter</Link>
+                <Link data-aos="fade-down"
+                data-aos-duration="1000" data-aos-delay='800' className='header-link aboutme shadow' to ='/aboutme'>Animations css</Link>
+                <Link data-aos="fade-down"
+                data-aos-duration="1000" data-aos-delay='900' className='header-link curriculum shadow' to ='/curriculum'>Curriculum</Link>
+                <Link data-aos="fade-down"
+                data-aos-duration="1000" data-aos-delay='1000' className='header-link projets shadow' to ='/projets'>Projets</Link>
+                <Link data-aos="fade-down"
+                data-aos-duration="1000" data-aos-delay='1100'className='header-link cursus shadow' to ='/cursus'>Cursus</Link>
+                <Link data-aos="fade-down"
+                data-aos-duration="1000" data-aos-delay='1200' className='header-link contact shadow' to ='/contact'>Me contacter</Link>
             </div>
         </div>
     );

@@ -1,0 +1,13 @@
+.aboutme{
+    z-index: 11;
+}
+.logo-container{
+position: relative;
+top:0px;
+font-weight: 300;
+margin-bottom: 20px;
+animation-delay: 1s;
+}
+.logo-link img{
+    width: 10%;
+}

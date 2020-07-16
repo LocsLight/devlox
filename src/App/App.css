@@ -6,12 +6,20 @@
 }
 
 .App {
- height: 90vh;    
+    
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(16, 100px);
   grid-gap: 12px 24px;
 }
+.shadow{ 
+  text-shadow: black 5px 3px 3px;
+  background-color: linear-gradient(to right white, rgb(204, 193, 193));
+}
+.page{
+  height: 100vh;
+}
+
 .animate-pop-in{
   animation: pop-in 0.5s ease-out both;
 }
@@ -23,6 +31,7 @@
   display: flex;
   justify-content: center; 
   position: relative;
+  z-index: 15;
 }
 .bounce {
   animation: bounce 2s  cubic-bezier(0.280, 0.840, 0.420, 1) infinite;
@@ -50,6 +59,23 @@
   to{
       opacity: 1;
       transform: none;
+  }
+}
+
+@keyframes anchor-underline {
+  0%, 10% {
+    left:0 ;
+    right:100 ;
+  }
+  40%, 60% {
+    left:0 ;
+    right:0 ;
+    
+  }
+  90%, 100%{
+    left:100% ;
+    right: 0;
+
   }
 }
 

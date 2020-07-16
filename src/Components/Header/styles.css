@@ -1,13 +1,14 @@
 .header{
 
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     grid-column: 1 / 9;
     perspective: 100px;
     position: relative;
     transform-style: preserve-3d;
     
-    color: white;
+    color: black;
     text-decoration: none;
     font-family:'Montserrat', sans-serif;
     display: flex, grid;
@@ -22,7 +23,7 @@
     content: '';
     background: #3CA55C;  /* fallback for old browsers*/
     background: -webkit-linear-gradient(to right, #ffea0593, #55e0d598);  /* Chrome 10-25, Safari 5.1-6*/
-    background: linear-gradient(to right, #ffea0593, #55e0d598), url('../../img/bg.jpg') no-repeat bottom ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ffea0593, #55e0d598), url('../../img/bg.png') no-repeat bottom ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     position: absolute;
     top: 0;
@@ -80,7 +81,27 @@
     display: inline-block;
     text-decoration: none;
     font-size: 1.2rem;
+    position: relative;
 }
+.header-link:hover{
+    text-decoration: none;
+    color: white;
+}
+.header-link::after{
+   
+    border-top: .14em solid #aa9c0393;
+    border-radius: 10%;
+    content:"";
+    position: absolute;
+        right: 100%;
+        bottom: .14em;
+        left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1); 
+}
+.header-link:hover::after{
+    animation: anchor-underline 1s cubic-bezier(0, 0.5, 0, 1) infinite;
+}
+
 .aboutme{
     grid-column: 1/2;
     animation-delay: 1.8s;
