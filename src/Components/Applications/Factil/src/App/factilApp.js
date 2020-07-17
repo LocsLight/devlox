@@ -20,7 +20,7 @@ function FactilApp() {
       </header>
       <div className="factures-container">
       {editModeEnabled ? <EditFactures/> :
-        <span>
+      <span>
       <OptionsFacture/>
       <AddFacture/>
       <TotalFacture/>

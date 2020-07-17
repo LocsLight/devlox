@@ -37,7 +37,7 @@
 .header:after {
     /*background: #3CA55C;  /* fallback for old browsers */
     /*background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
-    background: white; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #3a360e93; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     content: '';
     animation: little-rotate 1s cubic-bezier(.25,.78,.51,.77) forwards;
 

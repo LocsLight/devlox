@@ -13,8 +13,7 @@
   grid-gap: 12px 24px;
 }
 .shadow{ 
-  text-shadow: black 5px 3px 3px;
-  background-color: linear-gradient(to right white, rgb(204, 193, 193));
+  text-shadow: black 5px 2px 3px;
 }
 .page{
   height: 100vh;

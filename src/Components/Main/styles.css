@@ -6,15 +6,17 @@
 .arrow {
     z-index: 10;
     position: absolute;
-    animation: no-transform 2s ease-in-out forwards;
-    border: solid white;
-    border-width: 0 3px 3px 0;
+    animation: no-transform 2s ease-out forwards;
+    border: solid rgba(255, 255, 255, 0.712);
+    border-width: 0 7px 7px 0;
+    height: 30px;
+    width: 30px;
     padding: 3px;
     display: block;
     opacity: 0;
     transform: translate(-1rem, -1rem);
 }
-.navigation{
+.sidebar{
     background-color: rgba(255, 255, 0, 0.664);
     margin-left:0px;
     position: fixed;

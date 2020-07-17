@@ -1,13 +1,28 @@
 .aboutme{
-    z-index: 11;
+    display: flex;
 }
+
+
+.aboutme-articles{
+    background: #3CA55C;
+    width: 50%;
+}
+
 .logo-container{
-position: relative;
-top:0px;
-font-weight: 300;
-margin-bottom: 20px;
+    background:  #ffea0593;
+display: flex;
+width: 50%;
+justify-content: center;
+font-weight: 300vh;
 animation-delay: 1s;
 }
+.logo-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .logo-link img{
-    width: 10%;
+    max-width: 100%;
 }

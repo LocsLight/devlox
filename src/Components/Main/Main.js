@@ -29,7 +29,7 @@ const Main = () => {
                     <Route path='/cursus' component = {Cursus}></Route>
                     <Route path='/contact' component = {Contact}></Route>
                 </Switch>
-                <div className='navigation'>
+                <div className='sidebar'>
                     <div className='pageList'>
                         <li className='simpleLink'>1</li>
                         <li className='simpleLink'>2</li>
