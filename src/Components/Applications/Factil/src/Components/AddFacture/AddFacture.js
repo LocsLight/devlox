@@ -24,7 +24,6 @@ const AddFacture = () => {
     return (
         <div className='add-facture-container'>
         <h2>Combien pourriez-vous économiser?</h2>
-        <h6>Entrez une liste de dépenses mensuelles et décocher un élément pour estimer vos éventuels économies quotidiennes, hebdomadaires, mensuelles et annuelles.</h6>
         <input className='add-facture-form-control form-control'
         placeholder='Entrez un titre de facture'
         type='text'

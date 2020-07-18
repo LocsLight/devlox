@@ -12,8 +12,8 @@ const Landing = () => {
                 <h1 className='landing-title '>Créateur de contenu numérique</h1>
                 <h3 className='landing-title2 '>Passionné de développement d'applications innovantes </h3>
             </div>
-           <button data-aos='zoom-in'
-           data-aos-delay='2000' className='header-button '>Démarrer</button>
+           <div  data-aos='zoom-in'
+           data-aos-delay='2000' className='header-button '>Démarrer</div>
         </div>
     );
 }

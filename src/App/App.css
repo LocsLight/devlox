@@ -17,6 +17,60 @@
 }
 .page{
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.left-bg{
+  overflow: hidden;
+  background: #3CA55C;  /* fallback for old browsers*/
+  background: -webkit-linear-gradient(to right, #ffea0593, #65e05598);  /* Chrome 10-25, Safari 5.1-6*/
+  background: linear-gradient(to right, #faea3d93, #6dd16098); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  height: 100%;
+  grid-row: 1;
+}
+
+.left-content{
+  display: flex;
+  grid-column: 1/2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.right-bg{
+  overflow: hidden;
+  background: #3CA55C;  /* fallback for old browsers*/
+  background: -webkit-linear-gradient(to left, #ffea0593, #65e05598);  /* Chrome 10-25, Safari 5.1-6*/
+  background: linear-gradient(to left, #faea3d93, #6dd16098); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 1;
+}
+.right-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 2/3;
+  z-index: 1;
+}
+
+.page-content{
+  padding: 3rem 3rem;
+}
+.page-title{
+  margin-bottom: 20px;
+  background-color: black;
+  border-radius: 30px;
+  padding: .55rem;
+  color: white;
+}
+.page-subtitle{
+  margin-bottom: 20px;
+  background-color: black;
+  border-radius: 30px;
+  padding: .55rem;
+  color: white;
 }
 
 .animate-pop-in{

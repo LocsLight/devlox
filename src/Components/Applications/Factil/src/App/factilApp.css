@@ -27,11 +27,7 @@
 .App-link {
   color: #61dafb;
 }
-.factil-page{
-   background: #3CA55C;  /* fallback for old browsers*/
-  background: -webkit-linear-gradient(to right, #ffea0593, #55e0d598);  /* Chrome 10-25, Safari 5.1-6*/
-  background: linear-gradient(to right, #ffea0593, #55e0d598), url('../../src/img/bg.jpg') no-repeat bottom ;
-}
+
 
 .factures-container{
   width: 500px;

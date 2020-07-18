@@ -1,20 +1,25 @@
-.aboutme{
-    display: flex;
-}
 
 
-.aboutme-articles{
-    background: #3CA55C;
-    width: 50%;
-}
+
 
 .logo-container{
-    background:  #ffea0593;
 display: flex;
-width: 50%;
 justify-content: center;
 font-weight: 300vh;
-animation-delay: 1s;
+overflow: hidden;
+
+
+position: relative;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+}
+.logo-container::before{
+    animation: no-transform 1s cubic-bezier(.25,.78,.51,.77) forwards;
+    content: '';
+ 
+    z-index:0;
 }
 .logo-content{
     width: 100%;
